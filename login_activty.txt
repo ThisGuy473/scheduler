@@ -1,0 +1,1 @@
+2021-01-24T21:06:27.559576200-07:00[America/Denver] Select Password FROM users WHERE User_ID = '2' Success

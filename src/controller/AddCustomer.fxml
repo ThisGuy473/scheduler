@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="458.0" prefWidth="627.0" style="-fx-background-color: #372759; -fx-border-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCustomerController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="66.0" layoutY="2.0" stroke="BLACK" strokeType="INSIDE" width="627.0">
+         <effect>
+            <DropShadow />
+         </effect></Rectangle>
+      <Label layoutX="14.0" layoutY="14.0" text="Add Customer">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Customer_ID" disable="true" layoutX="14.0" layoutY="86.0" prefHeight="26.0" prefWidth="236.0" promptText="Customer ID - Auto Generated" stylesheets="@../utils/Form_Style.css" />
+      <TextField fx:id="customer_Postalcode" layoutX="29.0" layoutY="318.0" prefHeight="40.0" prefWidth="236.0" promptText="Postal/Zip Code" stylesheets="@../utils/Form_Style.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="customer_Name" layoutX="29.0" layoutY="152.0" prefHeight="35.0" prefWidth="236.0" promptText="Name" stylesheets="@../utils/Form_Style.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="customer_Address" layoutX="29.0" layoutY="263.0" prefHeight="26.0" prefWidth="236.0" promptText="Address" stylesheets="@../utils/Form_Style.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Label layoutX="294.0" layoutY="158.0" stylesheets="@../utils/Form_Style.css" text="Country" textFill="#d7d7d7">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="294.0" layoutY="216.0" stylesheets="@../utils/Form_Style.css" text="Province/State" textFill="#d7d7d7">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button layoutX="377.0" layoutY="400.0" mnemonicParsing="false" onAction="#saveCustomerButton" prefHeight="25.0" prefWidth="130.0" style="-fx-background-color: purple;" stylesheets="@../utils/Form_Style.css" text="Save" textFill="WHITE" />
+      <Button layoutX="516.0" layoutY="400.0" mnemonicParsing="false" onAction="#cancelButton" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: purple;" stylesheets="@../utils/Form_Style.css" text="Cancel" />
+      <TextField fx:id="customer_Phone" layoutX="29.0" layoutY="207.0" prefHeight="35.0" prefWidth="236.0" promptText="Phone" stylesheets="@../utils/Form_Style.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <ComboBox fx:id="customer_CountryBox" layoutX="423.0" layoutY="158.0" onAction="#selectedCusCountry" prefHeight="27.0" prefWidth="161.0" stylesheets="@../utils/Form_Style.css" />
+      <ComboBox fx:id="customer_StateBox" layoutX="422.0" layoutY="213.0" prefHeight="27.0" prefWidth="161.0" stylesheets="@../utils/Form_Style.css" />
+   </children>
+</AnchorPane>

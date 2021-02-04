@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" accessibleText="Password" prefHeight="587.0" prefWidth="1056.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginScreenController">
+   <children>
+      <TextField fx:id="loginUsername" layoutX="664.0" layoutY="232.0" prefHeight="34.0" prefWidth="256.0" promptText="Username" />
+      <Label fx:id="loginCurrentLocation" layoutX="675.0" layoutY="394.0" text="Current Location:" textFill="#070707" />
+      <Label fx:id="loginLocation" layoutX="781.0" layoutY="394.0" prefHeight="17.0" prefWidth="162.0" text="Label" />
+      <Label fx:id="loginTitle" layoutX="664.0" layoutY="177.0" prefHeight="43.0" prefWidth="348.0" text="Login to Scheduler">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <Button fx:id="loginSignIn" layoutX="664.0" layoutY="340.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="34.0" prefWidth="256.0" style="-fx-background-color: purple;" stylesheets="@../utils/Form_Style.css" text="LOG IN" textFill="WHITE" />
+      <Label layoutX="901.0" layoutY="502.0" text="Powered by " />
+      <Label layoutX="967.0" layoutY="502.0" text="JavaFX" textFill="#e80000" />
+      <PasswordField fx:id="loginPassword" layoutX="664.0" layoutY="286.0" prefHeight="34.0" prefWidth="256.0" promptText="Password" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#372759" height="593.0" layoutX="-4.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" width="532.0">
+         <effect>
+            <DropShadow />
+         </effect></Rectangle>
+      <ImageView fitHeight="160.0" fitWidth="178.0" layoutX="174.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../utils/scheduler_symbol_trans.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="173.0" layoutY="171.0" prefHeight="56.0" prefWidth="178.0" text="Scheduler" textFill="WHITE">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
