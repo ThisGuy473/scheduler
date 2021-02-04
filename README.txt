@@ -4,7 +4,6 @@ _____________________________________________________________
 Title:---------Scheduler         
 Purpose:-------A modern solution to scheduling
 Author:--------Jeffrey Day
-ContactINFO:---Jday92@my.wgu.edu
 App version:---3.02
 Date:----------1/27/2021
 IDE Version:---Apache NetBeans IDE 12.0
