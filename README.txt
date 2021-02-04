@@ -1,5 +1,5 @@
 
-C195 SCHEDULER
+SCHEDULER
 _____________________________________________________________
 Title:---------Scheduler         
 Purpose:-------A modern solution to scheduling
